@@ -7,6 +7,9 @@
   width: 300px;
   background-color: #253141;
   float: left;
+  &__header {
+    height: 100px;
+  }
 }
 
 .main-chat {
