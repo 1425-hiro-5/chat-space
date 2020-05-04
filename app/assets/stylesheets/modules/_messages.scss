@@ -24,4 +24,8 @@
   &__header {
     height: 100px;
   }
+  &__messages {
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+  }
 }
