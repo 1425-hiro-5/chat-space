@@ -21,4 +21,7 @@
   width: calc(100vw - 300px);
   background-color: #ffffff;
   float: right;
+  &__header {
+    height: 100px;
+  }
 }
