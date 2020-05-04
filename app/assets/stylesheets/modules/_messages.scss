@@ -14,11 +14,11 @@
     .box {
       height: 20px;
       width: 260px;
-      background-color: #d8d8d8;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
       &__name {
+        color: #ffffff;
         line-height: 20px;
       }
       &__icon {
