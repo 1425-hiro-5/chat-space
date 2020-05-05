@@ -12,3 +12,10 @@
         .messages__ditail__date 2020/05/01(Fri) 08:00:00
       .messages__text おはよう
   .main-chat__form
+    .form
+      .input
+        %input{placeholder: "type a message", class: "input__text", type: "text"}
+        %label{class: "input__image"}
+          = icon('far', 'image')
+          %input{type: "file", class: "file"}
+      .send-btn Send

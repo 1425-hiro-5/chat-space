@@ -120,5 +120,36 @@
   &__form {
     height: 90px;
     background-color: #d2d2d2;
+    padding: 20px 40px;
+    .form {
+      display: flex;
+      .input {
+        width: 100vw;
+        padding: 0 10px;
+        background-color: #ffffff;
+        line-height: 50px;
+        position: relative;
+        &__text {
+          height: 50px;
+          border-style: none;
+        }
+        &__image {
+          position: absolute;
+          right: 10px;
+          .file {
+            display: none;
+          }
+        }
+      }
+      .send-btn {
+        height: 50px;
+        width: 100px;
+        color: #ffffff;
+        background-color: #38aef0;
+        margin-left: 15px;
+        padding: 0 30px;
+        line-height: 50px;
+      }
+    }
   }
 }
