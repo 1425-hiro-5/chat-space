@@ -39,16 +39,22 @@
   &__group {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
-    .group {
-      padding: 20px 20px 40px;
-      &__name {
-        color: #ffffff;
-        font-size: 15px;
-        margin-bottom: 5px;
-      }
-      &__messages {
-        color: #ffffff;
-        font-size: 11px;
+    padding: 20px 20px 0;
+    .groups {
+      a {
+        text-decoration: none;
+        .group {
+          margin-bottom: 40px;
+          &__name {
+            color: #ffffff;
+            font-size: 15px;
+            margin-bottom: 5px;
+          }
+          &__messages {
+            color: #ffffff;
+            font-size: 11px;
+          }
+        }
       }
     }
   }
