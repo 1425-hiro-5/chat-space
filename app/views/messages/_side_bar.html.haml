@@ -1,7 +1,8 @@
 .side-bar
   .side-bar__header
     .box
-      .box__name hiro
+      .box__name
+        = current_user.name
       .box__icon
         = link_to "#", class: "box__icon__btn" do
           = icon('fas', 'edit')
