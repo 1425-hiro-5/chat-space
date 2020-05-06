@@ -61,7 +61,7 @@ $mainWhiteColor: #ffffff;
   width: calc(100vw - 300px);
   background-color: $mainWhiteColor;
   float: right;
-  &__header {
+  .header {
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -92,12 +92,11 @@ $mainWhiteColor: #ffffff;
       text-decoration: none;
     }
   }
-  &__messages {
+  .messages {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
-    .messages {
-      padding-top: 35px;
-      padding-left: 40px;
+    padding: 35px 40px;
+    .message {
       margin-bottom: 46px;
       &__ditail {
         display: flex;
@@ -119,11 +118,11 @@ $mainWhiteColor: #ffffff;
       }
     }
   }
-  &__form {
+  .form {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    .form {
+    &__set {
       display: flex;
       .input {
         width: 100vw;
