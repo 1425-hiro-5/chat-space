@@ -3,6 +3,10 @@ class UsersController < ApplicationController
   end
 
   def update
-    
+    if current_user.update(user_params)
+      
+    else
+      
+    end
   end
 end
