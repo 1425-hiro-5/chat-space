@@ -9,7 +9,7 @@ $mainWhiteColor: #ffffff;
   width: 300px;
   background-color: #253141;
   float: left;
-  &__header {
+  .header {
     height: 100px;
     display: flex;
     align-items: center;
@@ -19,18 +19,18 @@ $mainWhiteColor: #ffffff;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
-      &__name {
+      &__user-name {
         color: $mainWhiteColor;
         line-height: 20px;
         font-size: 16px;
         font-weight: bold;
       }
-      &__icon {
+      &__menu {
         width: 60px;
         line-height: 20px;
         display: flex;
         justify-content: flex-end;
-        &__btn {
+        .icon {
           color: $mainWhiteColor;
           text-decoration: none;
           margin-left: 5px;
@@ -38,25 +38,19 @@ $mainWhiteColor: #ffffff;
       }
     }
   }
-  &__group {
+  .groups {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
-    .groups {
-      a {
-        text-decoration: none;
-        .group {
-          margin-bottom: 40px;
-          &__name {
-            color: $mainWhiteColor;
-            font-size: 15px;
-            margin-bottom: 5px;
-          }
-          &__messages {
-            color: $mainWhiteColor;
-            font-size: 11px;
-          }
-        }
+    .group {
+      margin-bottom: 40px;
+      color: $mainWhiteColor;
+      &__name {
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      &__message {
+        font-size: 11px;
       }
     }
   }
@@ -67,14 +61,14 @@ $mainWhiteColor: #ffffff;
   width: calc(100vw - 300px);
   background-color: $mainWhiteColor;
   float: right;
-  &__header {
+  .header {
     height: 100px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #eeeeee;
+    padding: 0 40px;
     .left-box {
       margin-top: 35px;
-      margin-left: 40px;
       &__group {
         color: #333333;
         font-size: 20px;
@@ -92,18 +86,16 @@ $mainWhiteColor: #ffffff;
       font-size: 16px;
       border: 1px solid #38aef0;
       margin-top: 28px;
-      margin-right: 40px;
       padding: 0 20px;
       line-height: 40px;
       text-decoration: none;
     }
   }
-  &__messages {
+  .messages {
     height: calc(100vh - 100px - 90px);
     background-color: #fafafa;
-    .messages {
-      padding-top: 35px;
-      padding-left: 40px;
+    padding: 35px 40px;
+    .message {
       margin-bottom: 46px;
       &__ditail {
         display: flex;
@@ -125,11 +117,11 @@ $mainWhiteColor: #ffffff;
       }
     }
   }
-  &__form {
+  .form {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    .form {
+    &__set {
       display: flex;
       .input {
         width: 100vw;
