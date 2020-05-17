@@ -12,4 +12,9 @@ class GroupsController < ApplicationController
       render :new
     end
   end
+
+  private
+  def group_params
+    
+  end
 end
