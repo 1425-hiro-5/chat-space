@@ -44,13 +44,14 @@ $mainWhiteColor: #ffffff;
     padding: 20px 20px 0;
     .group {
       margin-bottom: 40px;
-      color: $mainWhiteColor;
       &__name {
         font-size: 15px;
         margin-bottom: 5px;
+        color: $mainWhiteColor;
       }
       &__message {
         font-size: 11px;
+        color: $mainWhiteColor;
       }
     }
   }
