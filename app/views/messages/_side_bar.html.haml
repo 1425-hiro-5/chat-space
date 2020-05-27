@@ -4,18 +4,15 @@
       .box__user-name
         = current_user.name
       .box__menu
-        = link_to "#" do
+        = link_to new_group_path do
           = icon('fas', 'edit', class: 'icon')
         = link_to edit_user_path(current_user) do
           = icon('fas', 'cog', class: 'icon')
   .groups
-    .group
-      .group__name
-        hiro
-      .group__message
-        まだメッセージがありません
-    .group
-      .group__name
-        hiro
-      .group__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .group
+        = link_to '#' do
+          .group__name
+            = group.name
+          .group__message
+            まだメッセージがありません
