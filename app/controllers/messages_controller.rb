@@ -7,5 +7,6 @@ class MessagesController < ApplicationController
   end
 
   def create
+    @message = @group.messages.new(messages_params)
   end
 end
