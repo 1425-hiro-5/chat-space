@@ -1,8 +1,11 @@
 .main-chat
   .header
     .left-box
-      .left-box__group test
-      .left-box__member Member：hiro
+      .left-box__group
+        hiro
+      .left-box__member
+        Member :
+        = current_user.name
     = link_to "#", class: "edit-btn" do
       Edit
   .messages
