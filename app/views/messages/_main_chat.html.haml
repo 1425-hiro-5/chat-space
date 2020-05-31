@@ -17,9 +17,10 @@
         おはよう
   .form
     = form_for [@group, @message] do |f|
-      .input
-        %input{placeholder: "type a message", class: "input__text", type: "text"}
-        %label{class: "input__image"}
-          = icon('far', 'image')
-          %input{type: "file", class: "file"}
-      =f.submit 'Send', class: 'form__submit'
+      .new_message
+        .input
+          %input{placeholder: "type a message", class: "input__text", type: "text"}
+          %label{class: "input__image"}
+            = icon('far', 'image')
+            %input{type: "file", class: "file"}
+        =f.submit 'Send', class: 'new_message__submit'
