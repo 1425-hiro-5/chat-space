@@ -126,16 +126,18 @@ a {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    &__set {
+    .new_message {
       display: flex;
+      width: 100%;
       .input {
-        width: 100vw;
         background-color: $mainWhiteColor;
         position: relative;
+        width: 100%;
         &__text {
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
+          color: #434a54;
           border-style: none;
         }
         &__image {
@@ -148,7 +150,7 @@ a {
           }
         }
       }
-      .send-btn {
+      &__submit {
         height: 50px;
         width: 100px;
         color: $mainWhiteColor;

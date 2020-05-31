@@ -1,32 +1,21 @@
 .main-chat
   .header
     .left-box
-      .left-box__group test
-      .left-box__member Member：hiro
-    = link_to "#", class: "edit-btn" do
+      .left-box__group
+        hiro
+      .left-box__member
+        Member :
+        = current_user.name
+    = link_to 'edit', class: "edit-btn" do
       Edit
   .messages
-    .message
-      .message__ditail
-        .message__ditail__name
-          hiro
-        .message__ditail__date
-          2020/05/01(Fri) 08:00:00
-      .message__text
-        おはよう
-    .message
-      .message__ditail
-        .message__ditail__name
-          hiro
-        .message__ditail__date
-          2020/05/01(Fri) 08:00:00
-      .message__text
-        おはよう
+    = render @messages
   .form
-    .form__set
-      .input
-        %input{placeholder: "type a message", class: "input__text", type: "text"}
-        %label{class: "input__image"}
-          = icon('far', 'image')
-          %input{type: "file", class: "file"}
-      %input{type: "submit", value: "Send", class: "send-btn"}
+    = form_for [@group, @message] do |f|
+      .new_message
+        .input
+          =f.text_field :content, placeholder: 'type a message', class: 'input__text'
+          =f.label :image, class: 'input__image' do
+            = icon('far', 'image')
+            =f.file_field :image, class: 'file'
+        =f.submit 'Send', class: 'new_message__submit'
