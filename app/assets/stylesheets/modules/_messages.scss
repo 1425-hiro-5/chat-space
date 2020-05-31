@@ -126,37 +126,35 @@ a {
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-    &__set {
-      display: flex;
-      .input {
-        width: 100vw;
-        background-color: $mainWhiteColor;
-        position: relative;
-        &__text {
-          height: 50px;
-          width: 100%;
-          padding: 0 40px 0 10px;
-          border-style: none;
-        }
-        &__image {
-          font-size: 20px;
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          .file {
-            display: none;
-          }
-        }
-      }
-      .send-btn {
+    display: flex;
+    .input {
+      width: 100vw;
+      background-color: $mainWhiteColor;
+      position: relative;
+      &__text {
         height: 50px;
-        width: 100px;
-        color: $mainWhiteColor;
-        background-color: #38aef0;
-        margin-left: 15px;
-        padding: 0 30px;
-        line-height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        border-style: none;
       }
+      &__image {
+        font-size: 20px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        .file {
+          display: none;
+        }
+      }
+    }
+    &__submit {
+      height: 50px;
+      width: 100px;
+      color: $mainWhiteColor;
+      background-color: #38aef0;
+      margin-left: 15px;
+      padding: 0 30px;
+      line-height: 50px;
     }
   }
 }

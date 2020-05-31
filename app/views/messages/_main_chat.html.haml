@@ -23,10 +23,10 @@
       .message__text
         おはよう
   .form
-    .form__set
+    = form_for [@group, @message] do |f|
       .input
         %input{placeholder: "type a message", class: "input__text", type: "text"}
         %label{class: "input__image"}
           = icon('far', 'image')
           %input{type: "file", class: "file"}
-      %input{type: "submit", value: "Send", class: "send-btn"}
+      =f.submit 'Send', class: 'form__submit'
